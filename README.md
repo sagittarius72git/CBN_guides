@@ -10,6 +10,7 @@ Cataclysm: Bright Nights の日本語図鑑（HTML）。ゲームのデータと
 | [weapons.html](weapons.html) | 武器・銃器図鑑（銃器423・近接484） |
 | [spells.html](spells.html) | 魔法図鑑（呪文281件） |
 | [monsters.html](monsters.html) | モンスター図鑑（722体） |
+| [vehicle_parts.html](vehicle_parts.html) | 車両パーツ図鑑（489件） |
 
 各ファイルは単体で開ける。対象は本体と MOD（アフターショック、アルカナ、マジカルナイト、カタクリズム++）。
 
