@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Author: sagittarius72 -->
+<!-- Assisted-by: Claude -->
+<title>CBN 図鑑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 目次ページ / Index page: one card per guide */
+:root {
+  --bg: #F3F2EE; --surface: #FFFFFF; --ink: #1C1D1A; --muted: #5E625B; --line: #D9D8D0;
+  --accent: #2F5F8A; --accent-soft: #E1EAF2;
+  --f-display: "Dela Gothic One", "Hiragino Kaku Gothic StdN", "Yu Gothic", sans-serif;
+  --f-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121412; --surface: #1A1D1B; --ink: #E3E5E0; --muted: #9AA097; --line: #2D312D;
+    --accent: #8DB8E0; --accent-soft: #1E2B37; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121412; --surface: #1A1D1B; --ink: #E3E5E0; --muted: #9AA097; --line: #2D312D;
+  --accent: #8DB8E0; --accent-soft: #1E2B37; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.7; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-family: var(--f-display); font-weight: 400; font-size: clamp(30px, 6vw, 44px); line-height: 1.2; margin: 0 0 8px; letter-spacing: .02em; }
+.lede { color: var(--muted); margin: 0 0 28px; max-width: 60ch; }
+ul.guides { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.guides a { display: grid; gap: 6px; align-content: start; height: 100%; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; color: inherit; text-decoration: none; transition: border-color .2s; }
+.guides a:hover { border-color: var(--accent); }
+.guides a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.guides h2 { margin: 0; font-size: 19px; font-weight: 700; color: var(--accent); }
+.guides .n { font-family: var(--f-mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.guides p { margin: 0; font-size: 14px; }
+footer { margin-top: 36px; color: var(--muted); font-size: 12px; max-width: 70ch; }
+footer p { margin: 4px 0; }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>CBN 図鑑</h1>
+  <p class="lede">Cataclysm: Bright Nights の変異・武術・武器・魔法・モンスターを日本語でまとめた図鑑。ゲームのデータと公式翻訳から作成。数値はゲーム内では確認していない。</p>
+  <ul class="guides">
+    <li><a href="mutations.html"><h2>変異図鑑</h2><span class="n">変異・特性 810件</span><p>効果、前提と変化先、カテゴリの概要、変異の方法。</p></a></li>
+    <li><a href="martial_arts.html"><h2>武術図鑑</h2><span class="n">49流派</span><p>技、バフ、対応武器、習得方法。</p></a></li>
+    <li><a href="weapons.html"><h2>武器・銃器図鑑</h2><span class="n">銃器423・近接484</span><p>性能、強みと弱み、車両への搭載。</p></a></li>
+    <li><a href="spells.html"><h2>魔法図鑑</h2><span class="n">呪文281件</span><p>アルカナとマジカルナイトの呪文の効果、強みと弱み。</p></a></li>
+    <li><a href="monsters.html"><h2>モンスター図鑑</h2><span class="n">722体</span><p>能力、攻撃、危険なモンスターの解説。</p></a></li>
+  </ul>
+  <footer>
+    <p>対象: 本体と MOD（アフターショック、アルカナ、マジカルナイト、カタクリズム++。武術図鑑は Mythical Martial Arts も）。</p>
+    <p>元データ: <a href="https://github.com/cataclysmbn/Cataclysm-BN">Cataclysm: Bright Nights</a>（CC BY-SA 3.0、マジカルナイトは CC BY-SA 4.0）、<a href="https://github.com/Noctifer-de-Mortem/nocts_cata_mod">Cataclysm++</a>。</p>
+    <p>作成: sagittarius72</p>
+  </footer>
+</div>
+</body>
+</html>
